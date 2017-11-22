@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">New Haras</string>
+    <string name="descricao">Baixe gratuitamente o aplicativo New Haras.</string>
+    <string name="sharedpreferences">h4r4sf4l</string>
+    <string name="erro_requisicao">Ocorreu um problema, tente novamente...</string>
+    <string name="nointernet">Vocẽ não possui conexão com internet</string>
+    <string name="facebook_app_id">291546241296521</string>
+    <string name="navigation_drawer_open"></string>
+    <string name="navigation_drawer_close"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

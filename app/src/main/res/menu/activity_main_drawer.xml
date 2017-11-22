@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_atualizar"
+            android:visible="true"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/account_edit"
+            android:title="Atualizar cadastro" ></item>
+        <item
+            android:id="@+id/nav_cadastrar"
+            android:icon="@drawable/account_plus"
+            android:title="Cadastrar" />
+
+        <!-- <item
+            android:id="@+id/nav_orcamentos"
+            android:visible="true"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/currency_usd2"
+            android:title="Meus Orçamentos" ></item>-->
+        <item
+            android:id="@+id/nav_exit"
+            android:visible="true"
+            android:icon="@drawable/exit_to_app"
+            android:title="Sair" />
+
+    </group>
+
+  <!--  <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+
+</menu>

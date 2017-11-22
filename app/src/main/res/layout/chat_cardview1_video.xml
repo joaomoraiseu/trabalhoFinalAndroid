@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:EMVideoView="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+        <me.himanshusoni.chatmessageview.ChatMessageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:cmv_backgroundColor="#88BABABA"
+            app:cmv_backgroundColorPressed="#FFBABABA"
+            app:cmv_arrowGravity="center"
+            app:cmv_arrowPosition="right"
+            app:cmv_contentPadding="3dp"
+            app:cmv_cornerRadius="3dp">
+
+            <FrameLayout
+                android:id="@+id/barraplayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.devbrackets.android.exomedia.ui.widget.VideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000"
+                    app:useDefaultControls="true"/>
+
+                <ImageButton
+                    android:id="@+id/btn_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="20px"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/fullscreen"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </me.himanshusoni.chatmessageview.ChatMessageView>
+    </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:minWidth="60dp"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/iconuserdefault"
+            app:riv_border_color="#fff"
+            app:riv_border_width="1dip"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="false"
+            app:riv_oval="true"
+          />
+
+</LinearLayout>
